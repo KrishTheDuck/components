@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component version="1.2" xmlns="http://schemas.circuit-diagram.org/circuitDiagramDocument/2012/component/xml">
+  <declaration>
+    <meta name="name" value="Arduino Romeo v1.1" />
+    <meta name="description" value="Arduino Romeo mockup" />
+    <meta name="author" value="Krish Sridhar" />
+    <meta name="guid" value="8f764035-18c6-4421-ac7f-5cbd327d4e78" />
+   </declaration> 
+   
+   <connections>
+   </connections>
+
+   <render>
+    <rect x="_Start" y="_End" width="300" height="250"/>
+
+    <group>
+        <rect x="_Start+50" y="_Start+10" width="30" height="30"/>
+        <rect x="_Start+85" y="_Start+10" width="30" height="30"/>
+        <rect x="_Start+120" y="_Start+10" width="50" height="30"/>
+        <rect x="_Start+175" y="_Start+10" width="50" height="30"/>
+        <text value="--DIGITAL PINS (UNUSED)--" x="_Start+140" y="_Start+25" align="CentreCentre" size="large" />
+    </group>
+    
+    <!--Servo Block-->
+    <group>
+        <group>
+            <rect x="_Start+10" y="_Start+10" width="20" height="30" />
+            <text value="Servo" x="_Start+20" y="_Start+45" align="CentreCentre" size="small"/>
+            <text value="Power" x="_Start+21" y="_Start+55" align="CentreCentre" size="small"/>
+        </group>
+        
+        <ellipse centre="_Start+18x+20y" rx="2.5" ry="2.5" thickness="1"/>
+        <text value="+" x="_Start+25" y="_Start+20" align="CentreCentre" size="small" />
+    
+        <ellipse centre="_Start+18x+30y" rx="2.5" ry="2.5" thickness="1"/>
+        <text value="-" x="_Start+25" y="_Start+30" align="CentreCentre" size="small" />
+    </group>
+
+    <!--M1 Motor Block-->
+    <group>
+        <group>
+            <text value="M1" x="_End+220" y="_End+42" align="CentreCentre" size="small" />
+            <rect x="_End+210" y="_End+50" width="20" height="30" />
+        </group>
+
+        <ellipse centre="_End+223x+70y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="-" x="_End+217" y="_Start+72" align="CentreCentre" size="small" />
+    
+        <ellipse centre="_End+223x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="+" x="_End+216" y="_Start+59" align="CentreCentre" size="small" />
+    </group>
+
+    <!--M2 Motor Block-->
+    <group>
+        <group>
+            <text value="M2" x="_End+220" y="_End+92" align="CentreCentre" size="small" />
+            <rect x="_End+210" y="_End+100" width="20" height="30" />
+        </group>
+
+        <ellipse centre="_End+223x+120y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="-" x="_End+217" y="_Start+122" align="CentreCentre" size="small" />
+    
+        <ellipse centre="_End+223x+110y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="+" x="_End+216" y="_Start+109" align="CentreCentre" size="small" />
+    </group>
+
+    <!--EXT POWER-->
+    <group>
+        <group>
+            <text value="EXT" x="_End+220" y="_End+142" align="CentreCentre" size="small" />
+            <text value="POW" x="_End+220" y="_End+152" align="CentreCentre" size="small" />
+            <rect x="_End+210" y="_End+160" width="20" height="30" />
+        </group>
+
+        <ellipse centre="_End+223x+183y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="-" x="_End+217" y="_Start+183" align="CentreCentre" size="small" />
+    
+        <ellipse centre="_End+223x+170y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="+" x="_End+216" y="_Start+170" align="CentreCentre" size="small" />
+    </group>
+
+    <!--Random Chips-->
+    <group>
+        <rect x ="_End-10" y="_End+110" width="150" height="60" />
+        <text value="CHIPSET" x="_End+65" y="_End+135" align="CentreCentre" size="large" /> 
+    </group>
+
+
+    <!--Digital Pins-->
+    <group name="Digital Pins">
+    <text value="Digital Pins" x="_Start+140" y="_Start+90" align="CentreCentre" size="small"/>
+    <text value="Digital Pins" x="_Start+140" y="_Start+90" align="CentreCentre" size="small"/>
+    
+    <group name="AREF">
+        <ellipse centre="_Start+53x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+53x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="A" x="_Start+52" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="R" x="_Start+52" y="_Start+76" align="CentreCentre" size="small"/>
+        <text value="E" x="_Start+52" y="_Start+84" align="CentreCentre" size="small"/>
+        <text value="F" x="_Start+52" y="_Start+92" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="GND">
+        <ellipse centre="_Start+63x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+63x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="G" x="_Start+62" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="N" x="_Start+62" y="_Start+76" align="CentreCentre" size="small"/>
+        <text value="D" x="_Start+62" y="_Start+84" align="CentreCentre" size="small"/>
+    </group>
+
+
+    <group name="13">
+        <ellipse centre="_Start+73x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+73x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="1" x="_Start+72" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="3" x="_Start+72" y="_Start+76" align="CentreCentre" size="small"/>
+    </group>
+
+    
+    <group name="12">
+        <ellipse centre="_Start+83x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+83x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="1" x="_Start+82" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="2" x="_Start+82" y="_Start+76" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="11">
+        <ellipse centre="_Start+93x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+93x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="1" x="_Start+92" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="1" x="_Start+92" y="_Start+76" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+92" y="_Start+86" align="CentreCentre" size="small"/>  
+    </group>
+
+    <group name="10">
+        <ellipse centre="_Start+103x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+103x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="1" x="_Start+103" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="0" x="_Start+103" y="_Start+76" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+103" y="_Start+86" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="9">
+        <ellipse centre="_Start+113x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+113x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="9" x="_Start+113" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+113" y="_Start+78" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="8">
+        <ellipse centre="_Start+123x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+123x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="8" x="_Start+123" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="7">
+        <ellipse centre="_Start+133x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+133x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="7" x="_Start+133" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="6">
+        <ellipse centre="_Start+143x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+143x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="6" x="_Start+143" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+143" y="_Start+78" align="CentreCentre" size="small"/>  
+ 
+    </group>
+    
+    <group name="5">
+        <ellipse centre="_Start+153x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+153x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="5" x="_Start+153" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+153" y="_Start+78" align="CentreCentre" size="small"/>  
+    </group>
+
+    <group name="4">
+        <ellipse centre="_Start+163x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+163x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="4" x="_Start+163" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+
+
+    <group name="3">
+        <ellipse centre="_Start+173x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+173x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="3" x="_Start+173" y="_Start+68" align="CentreCentre" size="small"/>
+        <text value="*" x="_Start+173" y="_Start+78" align="CentreCentre" size="small"/>  
+    </group>
+
+
+    <group name="2">
+        <ellipse centre="_Start+183x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+183x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="2" x="_Start+183" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="1">
+        <ellipse centre="_Start+193x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+193x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="1" x="_Start+193" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="0">
+        <ellipse centre="_Start+203x+53y" rx="2.5" ry="2.5" thickness="1" />
+        <ellipse centre="_Start+203x+60y" rx="2.5" ry="2.5" thickness="1" />
+        <text value="0" x="_Start+203" y="_Start+68" align="CentreCentre" size="small"/>
+    </group>
+    </group>
+
+    <!--Analog Pins-->
+    <group name="Analog Pins">
+        <text value="Analog In" x="_Start+196" y="_Start+180" align="CentreCentre" size="small"/>
+        <text value="Analog In" x="_Start+196" y="_Start+180" align="CentreCentre" size="small"/>
+     
+        <group name="0">
+            <ellipse centre="_Start+180x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+180x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="0" x="_Start+180" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+
+        <group name="1">
+            <ellipse centre="_Start+187x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+187x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="1" x="_Start+187" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+
+        <group name="2">
+            <ellipse centre="_Start+194x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+194x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="2" x="_Start+194" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+        
+        <group name="3">
+            <ellipse centre="_Start+201x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+201x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="3" x="_Start+201" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+        
+        <group name="4">
+            <ellipse centre="_Start+208x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+208x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="4" x="_Start+208" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+        
+        <group name="5">
+            <ellipse centre="_Start+215x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+215x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="5" x="_Start+215" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+    </group>
+
+    <group>
+        <text value="POWER" x="_Start+120" y="_Start+180" align="CentreCentre" size="small"/>
+        <text value="POWER" x="_Start+120" y="_Start+180" align="CentreCentre" size="small"/>
+        
+        <group name="6">
+            <ellipse centre="_Start+50x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+50x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="6" x="_Start+50" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+
+        <group name="7">
+            <ellipse centre="_Start+57x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+57x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="7" x="_Start+57" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+
+        <group name="RST">
+            <ellipse centre="_Start+64x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+64x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="T" x="_Start+64" y="_Start+191" align="CentreCentre" size="small"/>
+            <text value="S" x="_Start+64" y="_Start+183" align="CentreCentre" size="small"/>
+            <text value="R" x="_Start+64" y="_Start+175" align="CentreCentre" size="small"/>
+        </group>
+
+         <group name="3v3">
+            <ellipse centre="_Start+71x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+71x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="3" x="_Start+71" y="_Start+191" align="CentreCentre" size="small"/>
+            <text value="v" x="_Start+71" y="_Start+183" align="CentreCentre" size="small"/>
+            <text value="3" x="_Start+71" y="_Start+175" align="CentreCentre" size="small"/>
+        </group>
+
+         <group name="5v">
+            <ellipse centre="_Start+78x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+78x+206y" rx="2.5" ry="2.5" thickness="1" />
+            <text value="5v" x="_Start+78" y="_Start+191" align="CentreCentre" size="small"/>
+        </group>
+        
+        <group name="GND">
+            <ellipse centre="_Start+85x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+85x+206y" rx="2.5" ry="2.5" thickness="1" />
+
+            <ellipse centre="_Start+92x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+92x+206y" rx="2.5" ry="2.5" thickness="1" />
+            
+            <text value="D" x="_Start+88" y="_Start+191" align="CentreCentre" size="small"/>
+            <text value="N" x="_Start+88" y="_Start+183" align="CentreCentre" size="small"/>
+            <text value="G" x="_Start+88" y="_Start+175" align="CentreCentre" size="small"/>
+       </group>
+
+       <group name="VIN">
+            <ellipse centre="_Start+99x+199y" rx="2.5" ry="2.5" thickness="1" />
+            <ellipse centre="_Start+99x+206y" rx="2.5" ry="2.5" thickness="1" />
+
+            <text value="VIN" x="_Start+99" y="_Start+213" align="CentreCentre" size="small"/>
+       </group>
+    </group>
+
+    <group name="AnalogPins_Extra">
+        <rect x="_Start+170" y="_Start+220" width="55" height="20"/>
+        <text value="ANALOG IN" x="_Start+197" y="_Start+230" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="I2C">
+        <rect x="_Start+250" y="_Start+200" width="25" height="20"/>
+        <text value="I2C" x="_Start+260" y="_Start+210" align="CentreCentre" size="small"/>
+    </group>
+
+    <group name="Buttons">
+        <rect x="_Start+20" y="_Start+220" width="120" height="20"/>
+        <text value="BUTTONS" x="_Start+80" y="_Start+230" align="CentreCentre" size="small"/> 
+    </group>
+  </render>
+</component>
